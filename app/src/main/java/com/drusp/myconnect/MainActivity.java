@@ -11,8 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.adedom.library.Dru;
 import com.adedom.library.ExecuteQuery;
 import com.drusp.myconnect.avtivites.ChatActivity;
+import com.drusp.myconnect.avtivites.DashActivity;
 import com.drusp.myconnect.avtivites.Menu_Activity;
-import com.drusp.myconnect.avtivites.Vr_Activity;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         mBtRvAndGlide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getBaseContext(), Vr_Activity.class));
+                startActivity(new Intent(getBaseContext(), DashActivity.class));
             }
         });
     }

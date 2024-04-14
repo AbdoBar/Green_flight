@@ -12,9 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".avtivites.ChatActivity"
+            android:name=".avtivites.DashActivity"
             android:exported="false"
             android:screenOrientation="landscape"/>
+        <activity
+            android:name=".avtivites.ChatActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".avtivites.Vr_Activity"
             android:exported="false" />
@@ -24,11 +28,7 @@
         <activity
             android:name=".avtivites.Menu_Activity"
             android:exported="false"
-            android:screenOrientation="landscape"/>
-        <activity
-            android:name=".avtivites.Dashboard_Activity"
-            android:exported="false"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity android:name=".RecyclerViewAndGlideActivity" />
         <activity android:name=".DeleteActivity" />
         <activity android:name=".UpdateActivity" />
