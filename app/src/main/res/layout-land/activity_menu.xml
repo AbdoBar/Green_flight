@@ -53,7 +53,7 @@
                 android:layout_marginStart="550dp"
                 android:layout_marginLeft="550dp"
                 android:layout_marginTop="45dp"
-                android:background="@drawable/background_btn"
+                android:background="@drawable/background_btn_red"
                 android:text="get"/>
 
 
