@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background_color">#FBFBFD</color>
+    <color name="background_color_50">#B3FFFFFF</color>
+    <color name="text_color_header">#323232</color>
+    <color name="text_color_description">#616161</color>
+    <color name="white_color">#e7e7e7</color>
+    <color name="theme_color">#264BFE</color>
+    <color name="theme_color_light">#92A5FF</color>
+    <color name="theme_color_text_button">#3967D6</color>
+    <color name="theme_color_vehicle">#407BFF</color>
+    <color name="edit_text_background">@android:color/white</color>
+
+    <color name="First_color">#8f94fb</color>
+    <color name="Second_color">#4e54c8</color>
+    <color name="purple_color">#6c00ff</color>
+    <color name="WB_color">#f0f0f0</color>
+
+    <color name="p1">#3b8787</color>
+    <color name="p2">#7abd9a</color>
+    <color name="p3">#7abdab</color>
+    <color name="p4">#0c486c</color>
+    <color name="p5">#cff09f</color>
+    <color name="p6">#edf0e8</color>
+    <color name="p7">#128b8b</color>
+
+    <!--My Colors G01           -->
+    <color name="G_green">#16bac5</color>
+    <color name="G_blue">#5fbff9</color>
+    <color name="G_white">#efe9f4</color>
+    <color name="G_black">#171d1c</color>
+    <color name="G_purple">#5863f8</color>
+
+    <!--My Colors G02 -->
+    <color name="G_Blue200">#0562a7</color>
+    <color name="G_blue400">#3967d6</color>
+    <color name="G_green200">#80FC8C</color>
+
+
+    <color name="Air_green">#8bf1c9</color>
+    <color name="Air_red">#e22319</color>
+    <color name="Air_yellow">#fcffd2</color>
+    <color name="Air_black">#343a36</color>
+
+</resources>
