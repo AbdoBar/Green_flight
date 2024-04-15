@@ -6,291 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".avtivites.Vr_Activity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:ignore="MissingConstraints"
-        android:gravity="center"
+        android:background="#59A9A8"
         android:orientation="horizontal"
-        android:background="@drawable/nature">
+        >
 
         <LinearLayout
-            android:layout_width="130dp"
-            android:layout_height="match_parent"
-
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:clickable="true"
-                android:focusable="true"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp"
-                android:layout_margin="1dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="6dp"
-                android:elevation="6dp"
-                >
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/background_color_50"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageView
-                        android:id="@+id/genralbutton2"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_margin="20dp"
-                        android:background="@drawable/general_img_background"
-                        android:padding="20dp"
-                        android:src="@drawable/leaf"
-                        app:tint="#fff" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/lato_black"
-                        android:text="General"
-                        android:textColor="@color/G_Blue200"
-                        android:textSize="22sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:clickable="true"
-                android:focusable="true"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp"
-                android:layout_margin="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="6dp"
-                android:elevation="6dp"
-                >
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/background_color_50"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/genralbutton3"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_margin="20dp"
-                        android:background="@drawable/transport_ing_background"
-                        android:padding="20dp"
-                        android:src="@drawable/airplaneearth"
-                        app:tint="#fff" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/lato_black"
-                        android:text="General"
-                        android:textColor="@color/G_Blue200"
-                        android:textSize="22sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:clickable="true"
-                android:focusable="true"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp"
-                android:layout_margin="1dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="6dp"
-                android:elevation="6dp"
-                >
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/background_color_50"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/genralbutton4"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_margin="20dp"
-                        android:background="@drawable/bills_img_background"
-                        android:padding="20dp"
-                        android:src="@drawable/extension"
-                        app:tint="#fff" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/lato_black"
-                        android:text="General"
-                        android:textColor="@color/G_Blue200"
-                        android:textSize="22sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="400dp"
+            android:layout_width="420dp"
             android:layout_height="match_parent"
             >
-        </LinearLayout>
 
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:text="vr"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="100dp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                 />
+
+
+        </LinearLayout>
         <LinearLayout
-            android:layout_width="130dp"
+            android:layout_width="350dp"
             android:layout_height="match_parent"
+            >
 
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:clickable="true"
-                android:focusable="true"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp"
-                android:layout_margin="1dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="6dp"
-                android:elevation="6dp"
-                >
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/background_color_50"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/genralbutton5"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_margin="20dp"
-                        android:background="@drawable/grocery_img_background"
-                        android:padding="20dp"
-                        android:src="@drawable/menu"
-                        app:tint="#fff" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/lato_black"
-                        android:text="General"
-                        android:textColor="@color/G_Blue200"
-                        android:textSize="22sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:clickable="true"
-                android:focusable="true"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp"
-                android:layout_margin="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="6dp"
-                android:elevation="6dp"
-                >
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/background_color_50"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/genralbutton6"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_margin="20dp"
-                        android:background="@drawable/general_img_background"
-                        android:padding="20dp"
-                        android:src="@drawable/bar"
-                        app:tint="#fff" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/lato_black"
-                        android:text="General"
-                        android:textColor="@color/G_Blue200"
-                        android:textSize="22sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:clickable="true"
-                android:focusable="true"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp"
-                android:layout_margin="1dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="6dp"
-                android:elevation="6dp"
-                >
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/background_color_50"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/genralbutton7"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_margin="20dp"
-                        android:background="@drawable/entertainment_img_background"
-                        android:padding="15dp"
-                        android:src="@drawable/virtualglasses"
-                        app:tint="#fff" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/lato_black"
-                        android:text="General"
-                        android:textColor="@color/G_Blue200"
-                        android:textSize="22sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            <ImageView
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/vrpic"
+                android:layout_marginRight="200dp"/>
         </LinearLayout>
+
+
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
