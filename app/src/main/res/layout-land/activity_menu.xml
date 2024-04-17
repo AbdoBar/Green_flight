@@ -44,7 +44,7 @@
                 android:layout_marginBottom="10dp"
                 android:text="Your menu "
                 android:textColor="#6f6f6f"
-                android:textSize="30sp"
+                android:textSize="35sp"
                 android:textStyle="bold" />
 
             <Button

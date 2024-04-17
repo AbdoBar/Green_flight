@@ -55,4 +55,18 @@
     <color name="Air_yellow">#fcffd2</color>
     <color name="Air_black">#343a36</color>
 
+    <!-- ui Colors -->
+    <color name="AirGreen">#ebfcf2</color>
+    <color name="AirGreen2">#203f30</color>
+    <color name="AirPup">#f3cfff</color>
+    <color name="AirYell">#fff6e7</color>
+    <color name="AirRed">#ffeeee</color>
+    <color name="AirBlu">#58a7a4</color>
+
+
+
+
+
+
+
 </resources>

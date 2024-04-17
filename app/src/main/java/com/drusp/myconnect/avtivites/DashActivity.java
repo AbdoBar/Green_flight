@@ -45,14 +45,16 @@ public class DashActivity extends AppCompatActivity {
         imgTravel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Add your action for generalButton4 here
+                Intent intent = new Intent(DashActivity.this, TravelActivity.class);
+                startActivity(intent);
             }
         });
 
         imgGmae.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Add your action for imgMenu here
+                Intent intent = new Intent(DashActivity.this, ExtActivity.class);
+                startActivity(intent);
             }
         });
 

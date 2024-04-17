@@ -12,20 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".avtivites.DashActivity"
+            android:name=".avtivites.ExtActivity"
             android:exported="false"
             android:screenOrientation="landscape"/>
+        <activity
+            android:name=".avtivites.TravelActivity"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".avtivites.DashActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".avtivites.ChatActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
             android:name=".avtivites.Vr_Activity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".avtivites.Green_Activity"
             android:exported="false"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".avtivites.Menu_Activity"
             android:exported="false"

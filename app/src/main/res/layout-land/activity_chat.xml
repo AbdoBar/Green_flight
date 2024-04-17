@@ -34,10 +34,10 @@
             android:layout_gravity="center_horizontal">
             
             <EditText
-                android:layout_width="450dp"
+                android:layout_width="550dp"
                 android:layout_height="57dp"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/bg_round"
+                android:background="@drawable/edit_strock"
                 android:layout_gravity="center"
 
                 />
