@@ -33,8 +33,9 @@ public class RecyclerViewAndGlideActivity extends AppCompatActivity {
 
         mUsers = new ArrayList<>();
 
-        mRecyclerView = findViewById(R.id.recyclerView);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext()));
 
         String sql = "SELECT * FROM user";
         Dru.connection(ConnectDB.getConnection())
@@ -43,32 +44,39 @@ public class RecyclerViewAndGlideActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(ResultSet resultSet) {
                         try {
+
                             while (resultSet.next()) {
                                 User user = new User();
-                                user.setUserId(resultSet.getString(1));
-                                user.setName(resultSet.getString(2));
-                                user.setImage(resultSet.getString(3));
+                               // user.setUserId(resultSet.getString(1));
+                               user.setName(resultSet.getString(2));
+                                //user.setImage(resultSet.getString(3));
                                 mUsers.add(user);
                             }
                             mRecyclerView.setAdapter(new CustomAdapter());
+
                         } catch (SQLException e) {
                             e.printStackTrace();
                         }
                     }
                 });
+
     }
 
     class CustomAdapter extends RecyclerView.Adapter<CustomHolder> {
         @NonNull
         @Override
         public CustomHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_user_card, parent, false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_user, parent, false);
             return new CustomHolder(view);
         }
 
         @Override
         public void onBindViewHolder(@NonNull CustomHolder holder, int position) {
-            holder.bind(mUsers.get(position));
+            Glide.with(getBaseContext())
+                    .load(ConnectDB.BASE_URL + "/connect/profile/" + mUsers.get(position).getImage())
+                    .into(holder.ivImage);
+
+            holder.tvName.setText(mUsers.get(position).getName());
         }
 
         @Override
@@ -84,16 +92,8 @@ public class RecyclerViewAndGlideActivity extends AppCompatActivity {
         public CustomHolder(@NonNull View itemView) {
             super(itemView);
 
-            ivImage = itemView.findViewById(R.id.iv_image);
-            tvName = itemView.findViewById(R.id.tv_name);
-        }
-
-        public void bind(User user) {
-            Glide.with(itemView.getContext())
-                    .load(ConnectDB.BASE_URL + "/connect/profile/" + user.getImage())
-                    .into(ivImage);
-
-            tvName.setText(user.getName());
+            ivImage = (ImageView) itemView.findViewById(R.id.iv_image);
+            tvName = (TextView) itemView.findViewById(R.id.tv_name);
         }
     }
 }

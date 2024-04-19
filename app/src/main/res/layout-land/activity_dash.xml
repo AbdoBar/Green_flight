@@ -153,9 +153,25 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="400dp"
-            android:layout_height="match_parent"
+            android:layout_width="450dp"
+            android:layout_height="450dp"
+            android:gravity="center"
+            android:orientation="vertical"
             >
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:src="@drawable/air_avatar_whitback"
+                android:layout_marginTop="220dp"/>
+            <Button
+                android:id="@+id/admin_menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+android:layout_marginBottom="190dp"
+                android:background="@drawable/hide_btn"
+                />
+
         </LinearLayout>
 
         <LinearLayout

@@ -4,11 +4,15 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.drusp.myconnect.AdminActivity;
 import com.drusp.myconnect.R;
+import com.drusp.myconnect.RecyclerViewAndGlideActivity;
+
 public class DashActivity extends AppCompatActivity {
 
     @Override
@@ -23,12 +27,39 @@ public class DashActivity extends AppCompatActivity {
         ImageView imgChat = findViewById(R.id.img_chat);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})ImageView imgTravel = findViewById(R.id.img_travel);
 
+        Button btnadmin = findViewById(R.id.admin_menu);
+        btnadmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DashActivity.this, AdminActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+       /* if (ConnectDB.getConnection() == null) {
+            Dru.failed(getBaseContext());
+
+//            imgChat.setVisibility(View.INVISIBLE);
+//            imgMenu.setVisibility(View.INVISIBLE);
+//            imgTravel.setVisibility(View.INVISIBLE);
+//            imgGmae.setVisibility(View.INVISIBLE);
+//            imgNature.setVisibility(View.INVISIBLE);
+//            imgVr.setVisibility(View.INVISIBLE);
+
+        } else {
+            Dru.completed(getBaseContext());
+        }*/
+
+
+
         imgMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Add your action for generalButton2 here
                 // For example:
-                 Intent intent = new Intent(DashActivity.this, Menu_Activity.class);
+                 Intent intent = new Intent(DashActivity.this, RecyclerViewAndGlideActivity.class);
                  startActivity(intent);
             }
         });
@@ -62,8 +93,9 @@ public class DashActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Add your action for imgChat here
-                Intent intent = new Intent(DashActivity.this, Green_Activity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(DashActivity.this, Green_Activity.class);
+//                startActivity(intent);
+                startActivity(new Intent(getBaseContext(), Green_Activity.class));
             }
         });
 
