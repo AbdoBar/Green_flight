@@ -46,7 +46,7 @@ public class Green_Activity extends AppCompatActivity {
 //                                mEtName.setText("");
 //                                mEtImage.setText("");
 
-                                Toast.makeText(getBaseContext(), "Insert success", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getBaseContext(), "Insert success ", Toast.LENGTH_SHORT).show();
                             }
                         });
 
