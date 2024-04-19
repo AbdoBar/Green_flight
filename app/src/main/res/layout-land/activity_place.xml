@@ -4,6 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/AirYell"
     tools:context=".avtivites.PlaceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:background="@drawable/chine_pic"/>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:text="China - Beijing"
+                android:gravity="center"
+                android:textColor="@color/G_black"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Chine info :"
+                android:textColor="@color/G_black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:text="China's environmental situation is a mix of progress and challenges. It leads in renewable energy but faces severe pollution due to rapid industrialization. Efforts like strict regulations and clean technology adoption aim to address these issues, with global implications due to China's significant greenhouse gas emissions."
+                android:textColor="@color/G_black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
